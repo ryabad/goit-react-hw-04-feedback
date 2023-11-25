@@ -1,0 +1,18 @@
+import css from './index.module.css';
+
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+  return options.map(el => (
+    <button
+      className={css.btn}
+      key={el}
+      type="button"
+      value={el}
+      // onClick={() => onLeaveFeedback(el)}
+      onClick={onLeaveFeedback}
+    >
+      {el}
+    </button>
+  ));
+};
+
+export default FeedbackOptions;
