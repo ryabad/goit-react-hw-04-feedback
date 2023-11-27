@@ -43,7 +43,6 @@ const App = () => {
   return (
     <Section title="Please leave feedback">
       <FeedbackOptions
-        // options={Object.keys(this.state)}
         options={feedBackOptions}
         onLeaveFeedback={handleClick}
       />
